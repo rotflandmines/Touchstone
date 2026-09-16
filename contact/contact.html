@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--This is the Header details-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--This is the site title-->
+        <title>North Star Bakery</title>
+        <!--Styles.css link/reference/resource for Unit3 Requirements.
+        I placed the actual css file under its own folder per typical site building standards.-->
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+        <!--This is the H1 from Unit2 Requirements-->
+        <h1>Contacts and Pre Orders</h1>
+            
+        <!--This is the nagivation menu/links from Unit2 Requirements.
+        Individual pages are placed under unique folders for organization and normal site building
+        standards.-->
+        <nav aria-label="Main navigation">
+            <a href="../index.html">Home</a>
+            <a href="../products/products.html">Products</a>
+            <a href="../about/about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!--Contact page and form from Unit2 Requirements-->
+        <h2>Contact us</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Your contact information</legend>
+                    <label for="name">Name:</label>
+                    <br>
+                    <input id="name" name="name" type="text" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input id="email" name="email" type="email" required>
+                    <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>How can we help you?</legend>
+                    <label for="pickup-date">Pickup date:</label>
+                    <br>
+                    <input id="pickup-date" name="pickup-date" type="date" required>
+                    <br><br>
+                    <label for="request-type">Request type:</label>
+                    <br>
+                    <select id="request-type" name="request-type" required>
+                        <option value="">Choose one</option>
+                        <option>Pre-order</option>
+                        <option>General question</option>
+                    </select>
+                    <br><br>
+                    <label for="items">Item details:</label>
+                    <br>
+                    <textarea id="items" name="items" rows="5" cols="40" required></textarea>
+                    <br><br>
+                    <label for="allergies">Allergy notes, if applicable:</label>
+                    <br>
+                    <textarea id="allergies" name="allergies" rows="3" cols="40"></textarea>
+            </fieldset>
+            <button type="submit">Send request</button>
+        </form>
+
+        <!--Location and Hours-->
+        <h2>Location and Hours</h2>
+        <p>678 Main Street, BigCity, US
+        <br>Monday-Saturday, 7:00 a.m.-5:00 p.m.
+        <br>We are closed Sunday.</p>
+    </main>
+    <footer>
+        <!--Footer from Unit2 Requirements-->
+        <p>&copy; 2026 North Star Bakery</p>
+        </footer>
+    </body>
+    </html>

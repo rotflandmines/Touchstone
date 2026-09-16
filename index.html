@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--This is the Header details-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--This is the site title-->
+        <title>North Star Bakery</title>
+        <!--Styles.css link/reference/resource for Unit3 Requirements.
+        I placed the actual css file under its own folder per typical site building standards.-->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+        <!--This is the H1 from Unit2 Requirements-->
+        <h1>North Star Bakery</h1>
+            
+        <!--This is the nagivation menu/links from Unit2 Requirements.
+        Individual pages are placed under unique folders for organization and normal site building
+        standards.-->
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="products/products.html">Products</a>
+            <a href="about/about.html">About</a>
+            <a href="contact/contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+     <!--Welcome message, text, and list from Unit2 Requirements-->
+        <h2>Welcome!</h2>
+
+        <p>North Star Bakery provides fresh baked goods for any occasion!  From birthdays and special events,
+         to your regular favorites for lunch, North Star Bakery is always available for the local community.</p>
+    
+        <h2>What we're known for:</h2>
+        <ul>
+            <li>Handmade Breads</li>
+            <li>Delicious Pastries</li>
+            <li>Community focused</li>
+            <li>Friendly service!</li>
+        </ul>
+        <!--The weekly feature from Unit2 Requirements-->
+        <h2>Our Weekly Feature:</h2>
+        <picture>
+            <source media="(max-width: 600px)" srcset="assets/bakery-feature-small_c.png">
+            <img src="assets/bakery-feature-large_c.png" alt="Weekly Feature Cookies">
+        </picture>
+
+        <p>Stop in today to try our seasonal cookies, while supplies last!</p>
+
+        <!--Visit/Address details from Unit2 Requirements-->
+        <h2>Visit us</h2>
+            <h3>Address:</h3>
+            <p>789 Main Street, BigCity US.</p>
+            <h3>Hours:</h3>
+            <p>Monday-Saturday, 7:00 a.m.-5:00 p.m.</p>
+
+        <!--Audio message and failover from Unit2 Requirements-->
+        <h2>A welcome from the bakery</h2>
+        <audio controls>
+            <source src="assets/bakery-welcome_c.mp3" type="audio/mpeg">
+            Your browser does not support audio. Please visit us in person for a warm welcome.
+        </audio>
+    </main>
+    <footer>
+        <!--Footer from Unit2 Requirements-->
+        <p>&copy; 2026 North Star Bakery</p>
+        </footer>
+    </body>
+    </html>

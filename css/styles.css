@@ -1,0 +1,174 @@
+/* per the requirements for unit 3, I have selected 3 colors from the touchstone template
+to incorporate into the site (cream, brown, and peach).  Those colors have been chosen as
+they reflect the warmth and natural color tones associated with a local bakery (My choice
+for selected business was North Star Bakery).  I have limited the site to only 2 fonts as
+required (Arial and Georgia).  The site has been optimized to provide a mobile-first
+approach by ensuring flexbox configurations for the navigation and main content, and
+media query configurations for screens that are 700 pixels or wider.
+
+/* Three colors selected from the Unit3 Template file */
+:root {
+    --cream:#FFF8F0;
+    --brown:#6B3E26;
+    --peach:#D88C5A;
+}
+
+/* Sizing/Padding */
+* {
+    box-sizing:border-box;
+}
+
+/* Default Background/Font Color/Font type/Line spacing */
+body {
+    margin:0;
+    background:var(--cream);
+    color:var(--brown);
+    font-family:Arial,sans-serif;
+    line-height:1.5
+}
+
+/* Header/Main/Footer Spacing */
+header,
+main,
+footer {
+    padding:1rem
+}
+
+/* Header format/color */
+header {
+    background:var(--brown);
+    color:var(--cream);
+    text-align:center
+}
+
+/* Max width for logo image */
+header img {
+    max-width:140px
+}
+
+/* Flexbox for centered nagivation */
+nav {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:.75rem;
+    margin-top:1rem
+}
+
+/* Nav colors and weight */
+nav a {
+    color:var(--cream);
+    font-weight:bold
+}
+
+/* Flexbox for main page sizing/spacing */
+main {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    max-width:900px;
+    margin:auto
+}
+
+/* Heading font and visual hierarchy */
+h1,
+h2,
+h3 {
+    font-family:Georgia,serif
+}
+
+/* h2 Peach underline */
+h2 {
+    border-bottom:2px solid var(--peach);
+    padding-bottom:.25rem
+}
+
+/* Image and audio overflow max width */
+img,
+picture,
+audio {
+    max-width:100%
+}
+
+/* Featured product container border */
+figure {
+    margin:0;
+    padding:1rem;
+    background:#fff;
+    border:2px solid var(--peach)
+}
+
+/* Featured product caption italics */
+figcaption {
+    font-style:italic
+}
+
+/* Form/fields peach border */
+form,
+fieldset {
+    border:1px solid var(--peach)
+}
+
+/* Form white background */
+form {
+    padding:1rem;
+    background:#fff
+}
+
+/* Field spacing */
+fieldset {
+    margin-bottom:1rem;
+    padding:1rem
+}
+
+/* Uniform text for forms/buttons */
+input,
+select,
+textarea,
+button {
+    max-width:100%;
+    font:inherit;
+    padding:.5rem
+}
+
+/* Site colors for buttons */
+button {
+    background:var(--peach);
+    color:var(--brown);
+    border:1px solid var(--brown);
+    font-weight:bold
+}
+
+/* Site colors for footer */
+footer {
+    background:var(--brown);
+    color:var(--cream);
+    text-align:center
+}
+
+/* This media query is included to provide a mobile-first approach per the grading rubric.
+The layout is improved on screens that are 700 pixels or larger by increasing the vertical spacing between sections.*/
+@media(min-width:700px) {
+    header,
+    main,
+    footer {
+    padding:2rem
+}
+
+main {
+    gap:1.5rem
+}
+
+/* This section improves the flexbox layout by centering the responsive image/featured product */
+main > picture,
+main > figure {
+    align-self:center
+}
+
+/* This section ensures that the form is never wider than 700 pixels to remain readable
+on larger screens. */
+form {
+    max-width:700px
+}
+
+}
