@@ -9,6 +9,8 @@
         <!--Styles.css link/reference/resource for Unit3 Requirements.
         I placed the actual css file under its own folder per typical site building standards.-->
         <link rel="stylesheet" href="css/styles.css">
+        <!--This is the Javascript source location added for Unit4 Requirements.-->
+        <script src="js/site.js" defer></script>
     </head>
     <body>
         <header>
@@ -31,6 +33,27 @@
 
         <p>North Star Bakery provides fresh baked goods for any occasion!  From birthdays and special events,
          to your regular favorites for lunch, North Star Bakery is always available for the local community.</p>
+
+        <!--Appointment selector added for Unit4 JavaScript interaction requirements-->
+        <section class="appointment-section" aria-labelledby="appointment-heading">
+            <h2 id="appointment-heading">Set a time to bake with us!</h2>
+            <p>North Star Bakery is happy to announce "Cookies with the Community"!  An appointment based
+            visit with one of our bakers to come try your hand at crafting one of our delicious cookie recipies!
+            </p>
+            <p>Select a time below, and come bake with us!</p>
+            <form id="appointment-form">
+                <label for="appointment-date">Choose a date:</label>
+                <input id="appointment-date" name="appointment-date" type="date" required>
+
+                <label for="appointment-time">Choose a time:</label>
+                <select id="appointment-time" name="appointment-time" required>
+                    <option value="">Choose a time</option>
+                </select>
+
+                <button type="submit">Save baking time</button>
+            </form>
+            <p id="appointment-message" class="status-message" role="status" aria-live="polite"></p>
+        </section>
     
         <h2>What we're known for:</h2>
         <ul>
