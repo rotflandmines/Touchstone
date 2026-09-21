@@ -4,7 +4,7 @@ they reflect the warmth and natural color tones associated with a local bakery (
 for selected business was North Star Bakery).  I have limited the site to only 2 fonts as
 required (Arial and Georgia).  The site has been optimized to provide a mobile-first
 approach by ensuring flexbox configurations for the navigation and main content, and
-media query configurations for screens that are 700 pixels or wider.
+media query configurations for screens that are 700 pixels or wider. */
 
 /* Three colors selected from the Unit3 Template file */
 :root {
@@ -113,6 +113,38 @@ fieldset {
 form {
     padding:1rem;
     background:#fff
+}
+
+/* This section styles the index page appointment selector sections */
+.appointment-section {
+    padding: 1rem;
+    background: #fff;
+    border: 2px solid var(--peach);
+}
+
+.appointment-section form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+/* This section styles the validation errors on the contact page form submission. */
+.error-message {
+    margin: 0;
+    color: var(--brown);
+    font-weight: bold;
+}
+
+.input-error {
+    border: 2px solid var(--brown);
+}
+
+.status-message {
+    margin: .5rem 0 0;
+    font-weight: bold;
 }
 
 /* Field spacing */
